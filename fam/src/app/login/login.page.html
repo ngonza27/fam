@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate class="home">
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" value="" name="username" ngModel ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" name="password" ngModel ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-button type="submit">Submit</ion-button>
+      </ion-item>
+    </ion-list>
+  </form>
+  <ion-item>
+    <ion-button round full (click)="resetPassword()">Forgot Password</ion-button>
+  </ion-item>
+</ion-content>
