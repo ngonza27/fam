@@ -17,7 +17,7 @@ export class EnergiaPage implements OnInit {
   gaugeType = "semi";
   gaugeValue = 28.9;
   gaugeLabel1 = "Consumo Energia Actual";
-  gaugeAppendText = "km/hr";
+  gaugeAppendText = "kW/hr";
   thickValue=15;
   gaugeSize=350;
   

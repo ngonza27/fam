@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Configuracion Dispositivo</ion-title>
+    <ion-buttons slot="end">
+        <ion-button color="danger" (click)="logOut()" routerLink="/home" routerDirection="forward"> Logout</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <ion-list>
+      <ion-item>
+          <ion-label>Selecciona que Dispositivo desea Registrar</ion-label>
+          <ion-select [(ngModel)]="tipo">
+            <ion-select-option value="0">Sensor de Agua</ion-select-option>
+            <ion-select-option value="1">Sensor de Energia</ion-select-option>
+            <ion-select-option value="2">Dispositivo de Seguridad</ion-select-option>
+            <ion-select-option value="3">Luces</ion-select-option>
+            <ion-select-option value="4">Otro Tipo de Sensores</ion-select-option>
+          </ion-select>
+        </ion-item>
+    <ion-item color="textareaColor">
+      <ion-label floating>Id Dispositivo</ion-label>
+      <ion-input floating type="text" value="" [(ngModel)]="idDispositivo"></ion-input>
+    </ion-item>
+
+      <ion-item color="textareaColor" *ngIf="tipo==2||tipo==3|| tipo==4">
+        <ion-label floating>Nombre Dispositivo</ion-label>
+        <ion-input flaoting type="text" value="" [(ngModel)]="nombreDispositivo"></ion-input>
+      </ion-item>
+
+      <ion-item no-lines  color="textareaColor">
+        <button ion-button  round full type="submit" (click)="registrarDisp()">Guardar</button>
+      </ion-item>
+
+      <ion-item color="textareaColor">
+        <ion-label floating>Eliminar Dispositivo</ion-label>
+        <ion-input floating type="text" value="" [(ngModel)]="idBorrar"></ion-input>
+      </ion-item>
+
+      <ion-item no-lines  color="textareaColor">
+        <button ion-button round full type="submit" (click)="eliminarDispositivo()">Guardar</button>
+      </ion-item>
+  </ion-list>
+</ion-content>

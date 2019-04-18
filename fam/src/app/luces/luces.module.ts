@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-import { NgxChartsModule } from '@swimlane/ngx-charts'; 
-import { NgxGaugeModule } from 'ngx-gauge'
+
 import { IonicModule } from '@ionic/angular';
-import { AguaPage } from './agua.page';
+
+import { LucesPage } from './luces.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: AguaPage
+    component: LucesPage
   }
 ];
 
@@ -19,10 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes),
-    NgxGaugeModule,
-    NgxChartsModule
+    RouterModule.forChild(routes)
   ],
-  declarations: [AguaPage]
+  declarations: [LucesPage]
 })
-export class AguaPageModule {}
+export class LucesPageModule {}
