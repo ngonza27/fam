@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="register">
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate>
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" value="" name="username" ngModel r></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" name="password" ngModel ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email" name="email" ngModel ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Phone Number</ion-label>
+        <ion-input name="phoneNumber" ngModel ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <button ion-button type="submit">Submit</button>
+      </ion-item>
+
+    </ion-list>
+  </form>
+
+</ion-content>

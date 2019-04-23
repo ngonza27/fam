@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>historial</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="logOut()">Logout</button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="home">
+  <ion-grid>
+      <ion-row>
+        <ion-col>
+            <ion-item>
+              <ion-label>Seleccione el Sensor</ion-label>
+              <ion-select [(ngModel)]="Sensor">
+                <ion-option value="energia">Energia</ion-option>
+                <ion-option value="agua">Agua</ion-option>
+              </ion-select>
+            </ion-item>
+          <br>
+            <ngx-charts-bar-vertical
+            [view]="view"
+            [scheme]="colorScheme"
+            [results]="single"
+            [gradient]="gradient"
+            [xAxis]="showXAxis"
+            [yAxis]="showYAxis"
+            [legend]="showLegend"
+            [showXAxisLabel]="showXAxisLabel"
+            [showYAxisLabel]="showYAxisLabel"
+            [xAxisLabel]="xAxisLabel"
+            [yAxisLabel]="yAxisLabel"
+            (select)="onSelect($event)">
+          </ngx-charts-bar-vertical>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+</ion-content>

@@ -10,7 +10,13 @@ const routes: Routes = [
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'configuracion-disp', loadChildren: './configuracion-disp/configuracion-disp.module#ConfiguracionDispPageModule' },
   { path: 'configuracion-wifi', loadChildren: './configuracion-wifi/configuracion-wifi.module#ConfiguracionWifiPageModule' },
-  { path: 'luces', loadChildren: './luces/luces.module#LucesPageModule' }
+  { path: 'luces', loadChildren: './luces/luces.module#LucesPageModule' },
+  { path: 'configuracion-agua-energia', loadChildren: './configuracion-agua-energia/configuracion-agua-energia.module#ConfiguracionAguaEnergiaPageModule' },
+  { path: 'configuracion-usuario', loadChildren: './configuracion-usuario/configuracion-usuario.module#ConfiguracionUsuarioPageModule' },
+  { path: 'historial', loadChildren: './historial/historial.module#HistorialPageModule' },
+  { path: 'otros', loadChildren: './otros/otros.module#OtrosPageModule' },
+  { path: 'registrar', loadChildren: './registrar/registrar.module#RegistrarPageModule' },
+  { path: 'reiniciar-contrasena', loadChildren: './reiniciar-contrasena/reiniciar-contrasena.module#ReiniciarContrasenaPageModule' }
 ];
 
 @NgModule({

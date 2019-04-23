@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Configuracion Agua y Energia</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="logOut()">Logout</button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <ion-list style="height:100%">
+    <ion-item color="textareaColor">
+        <ion-label floating>Meta de Energia</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="valEnergia"></ion-input>
+    </ion-item>
+
+    <ion-item no-lines color="textareaColor">
+      <button ion-button round full type="submit" (click)="guardarEnergia()">Guardar</button>
+    </ion-item>
+
+    <ion-item color="textareaColor">
+      <ion-label floating>Meta de Agua</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="valAgua"></ion-input>
+    </ion-item>
+
+    <ion-item no-lines  color="textareaColor">
+      <button ion-button round full type="submit" (click)="guardarAgua()">Guardar</button>
+    </ion-item>
+
+    <ion-item no-lines  color="textareaColor" style="text-align:center">
+        <button ion-button type="submit">Fecha de corte</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

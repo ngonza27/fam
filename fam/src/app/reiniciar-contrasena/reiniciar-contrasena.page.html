@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>reiniciar_contrasena</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-label floating>Code</ion-label>
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate class="home">
+      <ion-list>
+  
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text" value="" name="username" ngModel ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <button ion-button type="submit">Enviar Codigo al Correo</button>
+        </ion-item>
+
+        <ion-item *ngIf="buttonClicked">
+          <ion-label floating>Code</ion-label>
+          <ion-input type="text" value="" name="code" ngModel ></ion-input>
+        </ion-item>
+        <ion-item>
+            <button ion-button type="submit">{{textoBoton}}</button>
+          </ion-item>
+  
+      
+      </ion-list>
+    </form>
+
+</ion-content>
+

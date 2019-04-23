@@ -30,6 +30,30 @@ export class AppComponent {
       title: 'luces',
       url: '/luces',
     },
+    {
+      title: 'Configuracion Agua y Energia',
+      url: '/configuracion-agua-energia',
+    },
+    {
+      title: 'Configuracion Wifi',
+      url: '/configuracion-wifio',
+    },
+    {
+      title: 'Configuracion Usuario',
+      url: '/configuracion-usuario',
+    },
+    {
+      title: 'luces',
+      url: '/luces',
+    },
+    {
+      title: 'Historial',
+      url: '/historial',
+    },
+    {
+      title: 'Otros',
+      url: '/otros',
+    }
   ];
 
   constructor(

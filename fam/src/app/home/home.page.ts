@@ -11,8 +11,7 @@ import {  MenuController } from '@ionic/angular';
 })
 export class HomePage {
 
-  constructor(public router: Router, public menuCtrl: MenuController) {
-  }
+  constructor(public router: Router, public menuCtrl: MenuController) { }
 
   ionViewWillEnter() {
     this.menuCtrl.enable(false);

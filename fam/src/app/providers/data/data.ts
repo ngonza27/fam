@@ -28,12 +28,12 @@ export class DataProvider {
       });
   }
 
-  /*returnUserInfo(){
+  returnUserInfo(){
     const user={"userId":this.authService.getAuthenticatedUser()['username'],"action":"0"}
     this.httpClient.post('https://50az5lc4ug.execute-api.us-east-1.amazonaws.com/testing/getinfo',user).subscribe(
         data=>{this.userInfo=data},
   
         error => {console.log(error)}
      );
-  }*/
+  }
 }
