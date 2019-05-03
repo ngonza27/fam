@@ -13,7 +13,7 @@
       <ion-item>
           <ion-label>Selecciona que Dispositivo desea Registrar</ion-label>
           <ion-select [(ngModel)]="tipo">
-            <ion-option *ngFor=" let device of devices" value="{{device}}">{{device}}</ion-option>
+            <ion-select-option *ngFor=" let device of devices" value="{{device}}">{{device}}</ion-select-option>
           </ion-select>
         </ion-item>
 

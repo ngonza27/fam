@@ -36,7 +36,7 @@ export class AppComponent {
     },
     {
       title: 'Configuracion Wifi',
-      url: '/configuracion-wifio',
+      url: '/configuracion-wifi',
     },
     {
       title: 'Configuracion Usuario',
