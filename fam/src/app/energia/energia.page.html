@@ -5,11 +5,14 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-buttons>
-      <ion-menu-button></ion-menu-button>
+  <ion-toolbar color='primary'>
+      <ion-buttons>
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    <ion-title>Energia</ion-title>
+    <ion-buttons slot="end">
+        <ion-button color="danger" (click)="logOut()"> Logout</ion-button>
     </ion-buttons>
-    <ion-title>  Energia </ion-title>
   </ion-toolbar>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

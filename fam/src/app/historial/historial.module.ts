@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Routes, RouterModule } from '@angular/router';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { IonicModule } from '@ionic/angular';
@@ -19,7 +18,6 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    BrowserAnimationsModule,
     NgxChartsModule,
     RouterModule.forChild(routes)
   ],
