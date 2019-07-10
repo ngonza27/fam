@@ -14,14 +14,14 @@ export class LucesPage implements OnInit {
   constructor(private router:Router, private httpClient: HttpClient, private dataService: DataProvider, private authService: AuthserviceService) { }
 
   prender(){
-    this.httpClient.post('https://50az5lc4ug.execute-api.us-east-1.amazonaws.com/testing/housedata','{userId:"tob447","deviceName""a1",luz":{"lightOn":"1"}').subscribe(
+    this.httpClient.post('https://50az5lc4ug.execute-api.us-east-1.amazonaws.com/testing/housedata','{"userId":"tob447","deviceName":"holp","luz":{"lightOn":"1"}}').subscribe(
       data=>{console.log(data);},
       error => console.log(error)
     );
   }
 
   apagar(){
-    this.httpClient.post('https://50az5lc4ug.execute-api.us-east-1.amazonaws.com/testing/housedata','{userId:"tob447","deviceName":"a1",luz":{"lightOn":"0"}}').subscribe(
+    this.httpClient.post('https://50az5lc4ug.execute-api.us-east-1.amazonaws.com/testing/housedata','{"userId":"tob447","deviceName":"holp","luz":{"lightOn":"0"}}').subscribe(
       data=>{console.log(data);},
       error => console.log(error)
     );
