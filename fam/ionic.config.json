@@ -1,5 +1,7 @@
 {
   "name": "fam",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
