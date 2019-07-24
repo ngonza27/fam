@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { IonicModule } from '@ionic/angular';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HistorialPage } from './historial.page';
 
 const routes: Routes = [
@@ -20,7 +19,6 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     NgxChartsModule,
-    BrowserAnimationsModule,
     RouterModule.forChild(routes)
   ],
   declarations: [HistorialPage]

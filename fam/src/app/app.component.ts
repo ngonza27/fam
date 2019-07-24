@@ -23,27 +23,7 @@ export class AppComponent {
       url: '/seguridad',
     },
     {
-      title: 'Configuracion Dispositivo',
-      url: '/configuracion-disp',
-    },
-    {
-      title: 'luces',
-      url: '/luces',
-    },
-    {
-      title: 'Configuracion Agua y Energia',
-      url: '/configuracion-agua-energia',
-    },
-    {
-      title: 'Configuracion Wifi',
-      url: '/configuracion-wifio',
-    },
-    {
-      title: 'Configuracion Usuario',
-      url: '/configuracion-usuario',
-    },
-    {
-      title: 'luces',
+      title: 'Luces',
       url: '/luces',
     },
     {
@@ -53,7 +33,23 @@ export class AppComponent {
     {
       title: 'Otros',
       url: '/otros',
-    }
+    },
+    {
+      title: 'Configuracion Dispositivo',
+      url: '/configuracion-disp',
+    },
+    {
+      title: 'Configuracion Agua y Energia',
+      url: '/configuracion-agua-energia',
+    },
+    {
+      title: 'Configuracion Wifi',
+      url: '/configuracion-wifi',
+    },
+    {
+      title: 'Configuracion Usuario',
+      url: '/configuracion-usuario',
+    },
   ];
 
   constructor(
