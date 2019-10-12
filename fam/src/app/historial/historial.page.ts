@@ -27,7 +27,7 @@ export class HistorialPage implements OnInit {
     domain: ['#3D5AFE', '#78cffd']
   };
 
-  constructor(private httClient : HttpClient,private authService: AuthserviceService,private router:Router)  {
+  constructor(private httClient : HttpClient, private authService: AuthserviceService,private router:Router)  {
     Object.assign(this, { single })
   }
 
@@ -43,5 +43,11 @@ export class HistorialPage implements OnInit {
   }
 
   ngOnInit() { }
+
+  back() {
+    this.router.navigate(['/menu']);
+  }
+
+
 
 }

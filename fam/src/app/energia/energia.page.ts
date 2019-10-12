@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {  MenuController } from '@ionic/angular';
+import {AuthserviceService} from "../providers/authservice.service";
+import {Router} from "@angular/router" 
 
 @Component({
   selector: 'app-energia',
@@ -8,11 +9,7 @@ import {  MenuController } from '@ionic/angular';
 })
 export class EnergiaPage implements OnInit {
 
-  constructor(public menuCtrl: MenuController) { }
-
-  ionViewWillEnter() {
-    this.menuCtrl.enable(true);
-  }
+  constructor(private authService: AuthserviceService,private router:Router) { }
 
   gaugeType = "semi";
   gaugeValue = 28.9;
@@ -23,7 +20,15 @@ export class EnergiaPage implements OnInit {
   
   energia: string;
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  logOut(){
+    this.authService.logOut();
+    this.router.navigate(['/home']);
+  }
+
+  back() {
+    this.router.navigate(['/menu']);
   }
 
 }

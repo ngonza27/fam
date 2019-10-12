@@ -16,7 +16,8 @@ const routes: Routes = [
   { path: 'historial', loadChildren: './historial/historial.module#HistorialPageModule' },
   { path: 'otros', loadChildren: './otros/otros.module#OtrosPageModule' },
   { path: 'registrar', loadChildren: './registrar/registrar.module#RegistrarPageModule' },
-  { path: 'reiniciar-contrasena', loadChildren: './reiniciar-contrasena/reiniciar-contrasena.module#ReiniciarContrasenaPageModule' }
+  { path: 'reiniciar-contrasena', loadChildren: './reiniciar-contrasena/reiniciar-contrasena.module#ReiniciarContrasenaPageModule' },  { path: 'menu', loadChildren: './menu/menu.module#MenuPageModule' }
+
 ];
 
 @NgModule({

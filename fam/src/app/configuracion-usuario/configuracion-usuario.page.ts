@@ -19,5 +19,9 @@ export class ConfiguracionUsuarioPage implements OnInit {
     this.router.navigate(['/home']);
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
+
+  back() {
+    this.router.navigate(['/menu']);
+  }
 }

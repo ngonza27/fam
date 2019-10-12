@@ -32,6 +32,9 @@ export class SeguridadPage implements OnInit {
 
   }
 
-  ngOnInit() {
+  ngOnInit() { }
+  
+  back() {
+    this.router.navigate(['/menu']);
   }
 }

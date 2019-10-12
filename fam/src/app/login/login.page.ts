@@ -27,7 +27,7 @@ export class LoginPage implements OnInit {
     isAuthenticated.subscribe((value)=>{
       console.log(value);
       if (value==true){
-        this.router.navigate(['/energia']);
+        this.router.navigate(['/menu']);
       }
       // en caso de que la validacion falla se activa una alerta de del celular mostrando el error
       

@@ -50,6 +50,10 @@ export class AppComponent {
       title: 'Configuracion Usuario',
       url: '/configuracion-usuario',
     },
+    {
+      title: 'Menu',
+      url: '/menu',
+    },
   ];
 
   constructor(

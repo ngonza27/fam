@@ -32,4 +32,7 @@ export class OtrosPage implements OnInit {
 
   ngOnInit() { }
 
+  back() {
+    this.router.navigate(['/menu']);
+  }
 }
